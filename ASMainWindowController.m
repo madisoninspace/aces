@@ -8,6 +8,13 @@
 		NSLog(@"Window init.");
 		results = [NSMutableArray array];
 		database = [[Database alloc] init];
+		
+		NSString *includedDb = @"aces.db";
+		NSFileManager *fm = [NSFileManager defaultManager];
+		
+		if ([fm fileExistsAtPath:includedDb]) {
+			[database open:includedDb];
+		}
 	}
 	return self;
 }
