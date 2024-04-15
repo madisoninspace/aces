@@ -7,6 +7,7 @@
 {
 	Database *database;
 	
+	NSMutableArray *results;
 	NSString *filePath;
 	
 	IBOutlet NSButton *openDatabaseButton;

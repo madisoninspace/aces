@@ -15,7 +15,8 @@
 }
 
 - (sqlite3 *)get;
-- (void)open:(NSString *)filePath;
 - (void)close;
+- (void)open:(NSString *)filePath;
+- (NSMutableArray *)query:(NSString *)typeCode;
 
 @end
