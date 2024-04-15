@@ -6,5 +6,15 @@
 @interface ASMainWindowController : NSWindowController
 {
 	Database *database;
+	
+	NSString *filePath;
+	
+	IBOutlet NSButton *openDatabaseButton;
+	IBOutlet NSButton *searchButton;
+	IBOutlet NSTextField *searchBox;
+	IBOutlet NSTextView *resultBox;
 }
+
+- (IBAction)openDatabaseButtonClicked:(id)sender;
+- (IBAction)searchButtonClicked:(id)sender;
 @end

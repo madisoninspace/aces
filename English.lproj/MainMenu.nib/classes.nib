@@ -1,8 +1,15 @@
 {
     IBClasses = (
         {
+            ACTIONS = {openDatabaseButtonClicked = id; searchButtonClicked = id; }; 
             CLASS = ASMainWindowController; 
             LANGUAGE = ObjC; 
+            OUTLETS = {
+                openDatabaseButton = NSButton; 
+                resultBox = NSTextView; 
+                searchBox = NSTextField; 
+                searchButton = NSButton; 
+            }; 
             SUPERCLASS = NSWindowController; 
         }, 
         {CLASS = FirstResponder; LANGUAGE = ObjC; SUPERCLASS = NSObject; }
