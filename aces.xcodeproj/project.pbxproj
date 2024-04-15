@@ -12,6 +12,7 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		8D4103222BCCEB2E000444AF /* database.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4103212BCCEB2E000444AF /* database.m */; };
+		8D4103592BCCEF27000444AF /* ASMainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4103572BCCEF27000444AF /* ASMainWindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,9 +25,11 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		32CA4F630368D1EE00C91783 /* aces_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aces_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		8D1107320486CEB800E47090 /* aces.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = aces.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D1107320486CEB800E47090 /* aces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D4103202BCCEB2E000444AF /* database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = database.h; sourceTree = "<group>"; };
 		8D4103212BCCEB2E000444AF /* database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = database.m; sourceTree = "<group>"; };
+		8D4103572BCCEF27000444AF /* ASMainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = ASMainWindowController.m; sourceTree = "<group>"; };
+		8D4103582BCCEF27000444AF /* ASMainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = ASMainWindowController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +47,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8D4103582BCCEF27000444AF /* ASMainWindowController.h */,
+				8D4103572BCCEF27000444AF /* ASMainWindowController.m */,
 				8D4103202BCCEB2E000444AF /* database.h */,
 				8D4103212BCCEB2E000444AF /* database.m */,
 			);
@@ -171,6 +176,7 @@
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				8D4103222BCCEB2E000444AF /* database.m in Sources */,
+				8D4103592BCCEF27000444AF /* ASMainWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +243,7 @@
 				OTHER_LDFLAGS = "-L/usr/local/opt/sqlite/lib";
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -249,6 +256,7 @@
 				OTHER_LDFLAGS = "-L/usr/local/opt/sqlite/lib";
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

@@ -9,7 +9,7 @@
 #import "database.h"
 
 
-@implementation database
+@implementation Database
 
 - (sqlite3 *)get {
 	return _database;

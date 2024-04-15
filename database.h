@@ -10,7 +10,7 @@
 #import <sqlite3.h>
 
 
-@interface database : NSObject {
+@interface Database : NSObject {
 	sqlite3 *_database;
 }
 
