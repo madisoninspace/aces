@@ -225,10 +225,7 @@
 		C01FCF4C08A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					ppc,
-					i386,
-				);
+				ARCHS = ppc;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_MODEL_TUNING = G5;
 				INFOPLIST_FILE = Info.plist;
@@ -256,12 +253,20 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = ppc;
 				CURRENT_PROJECT_VERSION = 1.0.0;
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/opt/sqlite/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/opt/sqlite/lib;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-I/usr/local/opt/sqlite/include";
 				OTHER_CPLUSPLUSFLAGS = "-I/usr/local/opt/sqlite/include";
-				OTHER_LDFLAGS = "-L/usr/local/opt/sqlite/lib";
+				OTHER_LDFLAGS = (
+					"-lsqlite3",
+					"-L/usr/local/opt/sqlite/lib",
+				);
 				PREBINDING = NO;
 				SDKROOT = /Developer/SDKs/MacOSX10.4u.sdk;
 				VERSIONING_SYSTEM = "apple-generic";
