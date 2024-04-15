@@ -31,6 +31,13 @@
 	sqlite3_stmt *statement;
 	if (_database != NULL && sqlite3_prepare(_database, [queryString UTF8String], -1, &statement, NULL) != SQLITE_OK) {
 		NSLog(@"Failed to prepare statement: %s", sqlite3_errmsg(_database));
+		
+		NSAlert *alert = [[NSAlert alloc] init];
+		[alert setMessageText:@"Error"];
+		[alert setInformativeText:@"Could not read from the database file."];
+		[alert addButtonWithTitle:@"OK"];
+		
+		[alert runModal];
 	}
 	
 	NSMutableArray *results = [NSMutableArray array];
